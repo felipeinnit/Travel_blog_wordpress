@@ -1,0 +1,31 @@
+body{
+    font-family: 'Cardo', georgia,serif;
+    font-size: 18px;
+    line-height:1.2;
+    -webkit-font-smoothing: antialiased;
+}
+
+.cardo {
+    font-family: 'Cardo', georgia,serif;
+}
+
+.archivo{
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.tenor{
+    font-family: 'Tenor Sans', sans-serif;
+}
+
+.hero-heading, 
+.hero-subhead {
+    font-size: 64px;
+}
+
+.hero-heading{
+    letter-spacing: 0.05em;
+}
+
+.hero-content{
+    max-width: 750px;
+}
