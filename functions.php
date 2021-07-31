@@ -181,3 +181,18 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function shout_name($name){
+	echo strtoupper( $name );
+}
+
+//function to format the dates
+
+function nice_date($date){
+	echo date("F Y", strtotime($date));
+}
+
+//function to return bg image
+
+function nice_bg($image_field){
+	echo 'background-image: url(' . get_field($image_field) .')';
+}
