@@ -146,11 +146,10 @@ function nomadsun_scripts() {
 
 	wp_style_add_data( 'nomadsun-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'nomadsun-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script('nomadsun-barba', get_template_directory_uri() . '/js/barba.js');
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+	wp_enqueue_script('nomadsun-main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0.0', true );
+
 }
 add_action( 'wp_enqueue_scripts', 'nomadsun_scripts' );
 
